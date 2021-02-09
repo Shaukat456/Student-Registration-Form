@@ -1,14 +1,15 @@
 const mongoose=require('mongoose')
+// require('validor')
 
-
-const StudentInfoType=mongoose.Schema({
+const studentInfoType=mongoose.Schema({
     name:{
-        type:String
+        type:String,
     }
+
 })
 
 
-const Student=new mongoose.model('Student',StudentInfoType)
+const Student=new mongoose.model('Student',studentInfoType)
 
 
 module.exports=Student;

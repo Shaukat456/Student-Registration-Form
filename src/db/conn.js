@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-mongoose.connect("mongodb://localhost:27017/RestApi3",{
+mongoose.connect("mongodb://localhost:27017/Rest3",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true,
