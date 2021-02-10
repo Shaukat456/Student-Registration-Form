@@ -1,0 +1,844 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Audiowide', cursive;
+
+
+}
+html{
+    scroll-behavior: smooth;
+    /* transition: all .6s ease; */
+    
+}
+
+
+body {
+    background-color:white !important;
+}
+a {
+    text-decoration: none !important;
+    
+}
+.my-navbar{
+    margin-bottom: 2rem !important;
+    padding: 0rem 0rem !important;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background-color: white;
+   
+
+    animation-name: cvbtn;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+    @keyframes cvbtn {
+        from{
+            /* opacity: ; */
+            /* transform: scale(1)  ; */
+            margin-left: -774%;
+            /* margin-right: 60%; */
+            transition: all .5s ease;
+            /* background-color: tomato; */
+            
+        }       
+        to{
+            /* background-color: black; */
+            margin-left: 0%;
+            transition: all .5s ease;
+            
+
+        }
+
+}    
+.work-btn{
+    /* transform:skewX(30deg) skewY(4deg); */
+    box-shadow:-1px 26px 12px grey;
+    
+    z-index: 6;
+
+        }
+        .cv-btn::before{
+            content: 'Click Here to get My Resume';
+            height: 4rem;
+            width: 7rem;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(0, 173, 14);
+            color: blanchedalmond;
+            position: absolute;
+            z-index: -9;
+            transition: all .5s ease;
+            display: none;
+            overflow: scroll;
+        }
+        .cv-btn:hover::before{
+           transform: scale(2) skew(5deg);
+           z-index: 6;
+           display:flex;
+           transition: all .5s ease;
+           animation-name: cvbtnhover;
+           animation-iteration-count: 1;
+           animation-duration: 5s;
+           transition: all .5s ease;
+       }
+           @keyframes cvbtnhover {
+               10%{
+                   /* opacity: ; */
+                   /* transform: scale(1)  ; */
+                   opacity: .6;
+                   /* margin: 2px 2px 2px 2px; */
+                   margin-right: 60%;
+                   transition: all 5s ease;
+                   
+               }       
+               40%{
+                   opacity: 1;
+                   /* transform: scale(1)  skewX(23deg) skewY(6deg); */
+                   transition: all .5s ease;
+                   margin-right: 20%;
+                   
+               }
+
+               100%{
+                margin-right: 100%;
+                   
+               }
+
+
+
+        
+
+        }
+.cv-btn{
+    /* transform:skewX(30deg) skewY(4deg); */
+    box-shadow:-34px 26px 12px grey;
+    z-index: -6;
+    transition: all .5s ease;
+
+    animation-name: cvbtn;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+    @keyframes cvbtn {
+        from{
+            /* opacity: ; */
+            /* transform: scale(1)  ; */
+            margin-left: -774%;
+            /* margin-right: 60%; */
+            transition: all .5s ease;
+            
+        }       
+        to{
+            /* opacity: 1; */
+            /* transform: scale(1)  skewX(23deg) skewY(6deg); */
+            transition: all .5s ease;
+            margin: 2px 2px 2px 2px;
+
+
+        }
+    }
+
+
+
+
+
+.navbar {
+    background: transparent;
+    margin: 0rem;
+    transition-duration: 0.7s;
+    transition: all .5s ease;
+    
+
+}
+.navbar-nav {
+    margin-left: auto;
+    transition: all .5s ease;
+
+  
+}
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    transition: all .5s ease;
+
+}
+.nav-link{
+    color: #000000 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+   text-align: center;
+   transition: all .5s ease;
+
+    
+    
+}
+.navbar.scrolled {
+    background: #fff;
+    transition: all .5s ease;
+    /* margin-left: 0; */
+    /* margin-right: 101px; */
+    /* width: 100vw; */
+
+}
+.nav-link:hover{
+background-color: #11381c;
+/* transform:scale(1.1) */
+border: 2px solid white;
+border-radius: 10px 26px 10px 43px;
+color: #fff !important;
+transition-duration: .6s;
+
+}
+.nav-link:active{
+background-color: #11381c;
+/* transform:scale(1.1) */
+border: 2px solid white;
+border-radius: 10px 26px 10px 43px;
+color: #fff !important;
+transition-duration: .6s;
+
+}
+.hireme-btn {
+    height: 2rem;
+    width:5.9rem;
+    background-color: #472f66;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2px 2px 2px 2px;
+    /* margin: 0 auto; */
+   
+    }
+
+
+   
+
+.hello-box{
+    height: 2rem;
+    width: 7rem;
+    background-color: #11381c;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px 2px 2px 2px ;
+    position: absolute;
+    margin-top: 11.5rem;
+    left: 40%;
+} 
+.arrow {
+    background-color: #11381c;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0px 0px 60% 60% ;
+
+    position: absolute;
+    top: 96%;
+    left: 20%;
+}
+.intro {
+    /* box-shadow:20px 20px 50px 15px grey;   */
+
+    /* box-shadow:20px 20px 10px grey; */
+    margin-top: 17rem;
+    margin-left: 6rem;
+
+}
+.intro h2 {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Audiowide', cursive;
+    /* box-shadow: 20px 20px 155px 14px grey; */
+ 
+    
+  text-shadow:-22px 18px 9px grey;
+        font-size: 4.3rem;
+    /* box-shadow: 2px black; */
+    transform: skewX(23deg) skewY(6deg);
+transition: all .5s ease;
+    font-weight: bold;
+    margin-top: -3rem;
+    animation-name: h2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+    @keyframes h2 {
+        10%{
+            /* margin-left: 500%; */
+            opacity: .1;
+            transform: scale(1.7) skewX(70deg) skewY(79deg) ;
+            transition: all .5s ease;
+            
+        }       
+        50%{
+          
+            opacity: 1;
+            transform: scale(1)  skewX(8deg) skewY(1deg);
+            transition: all .5s ease;
+
+        }
+        100%{
+          
+            opacity: 1;
+            transform: scale(1)  skewX(23deg) skewY(6deg);
+            transition: all .5s ease;
+
+        }
+    }
+
+
+.intro p {
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    transform: skewX(21deg) skewY(4deg);
+    text-shadow:-22px 18px 6px grey;
+
+}
+
+.cv-btn {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #11381c;
+    outline: none;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    color: #fff;
+    /* margin: 2px 2px 2px 2px; */
+  
+
+}
+.work-btn {
+    height: 2.5rem;
+    width: 8rem;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 3px 3px 3px 3px;
+    outline: none;
+    transition: all .6s ease;
+    margin: 2px 2px 2px 2px;
+
+
+    animation-name: workbtn;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+    @keyframes workbtn {
+        from{
+            /* opacity: ; */
+            /* transform: scale(1)  ; */
+            margin-left: -774%;
+            /* margin-right: 60%; */
+            transition: all .5s ease;
+            
+        }       
+        to{
+            /* opacity: 1; */
+            /* transform: scale(1)  skewX(23deg) skewY(6deg); */
+            transition: all .5s ease;
+            margin: 2px 2px 2px 2px;
+
+
+        }
+    }
+
+
+
+
+
+
+.work-btn:hover {
+    background-color: #11381c;
+    outline: none;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    color: #fff;
+    transition: all .6s ease;
+
+
+}
+.picture img{
+    height: 400px;
+    width: 400px;
+    margin-top: 6rem;
+    display: block;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+.scroll-down{
+    height: 3rem;
+    width: 2rem;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+    margin: 5px 5px 5px 5px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    cursor: pointer;
+}
+.circle {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #11381c;
+    margin: 4px 4px 6px 6px;
+    animation: color 2s infinite alternate ;
+   
+    
+
+}
+@keyframes color{
+    
+    50% {
+        transform: translateY(-30%);
+      }
+      100% {
+        transform: translateY(80%);
+      }
+}
+.progress-section {
+    margin-top: 8rem;
+    color: rgb(255, 255, 255);
+    background-color:#343b46;
+    transform: skew(90deg) ;
+    box-shadow:20px 20px 10px grey;
+
+    animation-name: progressection;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    
+
+}
+@keyframes progressection{
+    20%{
+        opacity: .1;
+        transform: scale(.1);
+        transition: all .5s ease;
+
+    }
+    40%{
+        transform: scale(.3);
+        /* margin-right: 599%; */
+        opacity: .3;
+        transition: all .5s ease;
+
+        /* margin-left: 100px; */
+    }
+    
+    90%{
+        opacity: .5;
+        transform: scale(.5);
+        /* margin-left: 400%; */
+        transform: skew(180deg);
+        /* margin-left: 400px; */
+        transition: all .5s ease;
+    
+    }       
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: skew(90deg);
+        transition: all .5s ease;
+        /* margin-left: 0px; */
+
+
+    }
+
+}
+.progress {
+    height:0.4rem!important;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #000;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    
+   
+}
+ h5{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+.progress-bar {
+    background-color: #11381c !important;
+}
+.hire-me-btn:hover{
+    transform:scale(1.05);
+    transition: all .5s ease;
+    border-radius: 0px 0px 0px 0px ;
+}
+.hire-me-btn{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: white;
+    color: black;
+    outline: none;
+    border-radius: 33px 3px 33px 3px ;
+    /* margin: 2px 2px 2px 2px;  */
+    transition: all .2s ease;
+
+
+  
+}
+
+.aboutme-btn{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 13px 33px 31px 23px;
+    
+    outline: none;
+    transition: all .6s ease;
+    background-color:#11381c;
+    margin: 2px 2px 2px 2px;
+    color: #fff;
+}
+.aboutme-btn:hover {
+    background-color:#e7ffee;
+    outline: none;
+    border: none;
+    border-radius: 3px 3px 3px 3px ;
+    color: rgb(22, 0, 0);
+    transition-duration: .6s;
+
+}
+.exp {
+    height:7rem;
+    width: 7rem;
+    background-color: #11381c;
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+    top: 46%;
+    left:-0rem;
+
+}
+.sbox{
+    height: 1rem;
+    width: 0.5rem;
+    background-color: bisque;
+    margin-left: 20px;
+    display: inline-block;
+    clear: both;
+    margin-top: -0rem;
+}
+h6 {
+    font-family: 'Poppins', sans-serif;
+ font-weight: bolder;
+ color: #fff;
+ text-align: center;
+ padding: 2px;
+}
+
+.lcontainer{
+   margin-left: 50%;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.line{
+    content: "";
+    height: 1rem;
+    width:0.1rem;
+    background-color: #11381c;
+    display: block;
+    margin: 0.2rem;
+}
+
+ .service-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+ }
+ .service-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+ }
+.card {
+    height: 3rem;
+    background-color: #11381c !important;
+    border-radius: 3px 3px 3px 3px;
+    color:#fff;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    height: 200px;
+}
+/* portfolio card */
+.pcard {
+    height: 3rem;
+    background-color: #11381c !important;
+    border-radius: 3px 3px 3px 3px;
+    color:#fff;
+    margin-top: 3rem;
+    width: 400px;
+    margin-bottom: 1.5rem;
+    height: 200px;
+    transition: all .5s ease;
+
+}
+.pcard:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+
+}
+/* .card-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: bisque;
+    display: inline-block;
+    clear: both;
+    margin-top: 0rem;
+    
+} */
+.card-head {
+    color: #fff;
+    text-align: right;
+    display: inline-block;
+    clear: both;
+    text-align: center;
+    height: 200px;
+}
+.card-head  h6{
+    text-align: center;
+    margin-top: -2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+.experience{
+    margin-top: 2rem;
+    height: auto;
+    width: 100%;
+    
+    padding: 4rem;
+    background-image: url('/img/contatimg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+    background-color: #11381c;
+    border-radius: 4px 4px 4px 42px;
+    margin-top: 2rem;
+    /* border: 3px dotted ; */
+    /* color: whea; */
+}
+
+.cen-box{
+    height: 10rem;
+    width: 10rem;
+    background-color: #11381c;
+    border-radius: 4px 4px 24px 41px;
+    margin-top: 2rem;
+    
+}
+.box h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 3rem;
+
+}
+
+
+.cen-box h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 3rem;
+
+}
+.box p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fbfffc;
+    font-weight: bold;
+
+}
+.cen-box p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.FreelanceLink{
+    margin-top: 2rem;
+    background-image: url(../img/experience-bg.png);
+    padding:3rem;
+    background-attachment: fixed;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+}
+.FreelanceLink h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+.FreelanceLink p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 4rem;
+}
+.contact{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.contact  h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+.contact  p{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.contact  span{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.smedia{
+    height: 3rem;
+    width: 14rem;
+    background-color: bisque;
+    border-radius: 5px 25px 5px 5px;  
+}
+.smedia span {
+   margin-left: 1rem;
+    
+}
+.contact-form:required{
+        background-color: red;
+        color: red;
+}
+
+.contact-form {
+    font-family: 'Poppins', sans-serif;
+}
+.contact-form input  {
+   margin-top: 1rem;
+   width: 25rem; 
+   text-align: center;
+   margin-left: 1rem;
+   border: 2px solid rgb(0, 0, 0);
+   border-radius: 31px 25px 52px 5px;
+   padding: 5px 5px;
+   transition: all .5s ease;
+  
+}
+
+
+.contact-form textarea:focus{
+    border: 3px solid #071f05;
+}
+
+.contact-form textarea{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 25rem; 
+    border: 2px solid bisque;
+   border-radius: 5px 5px 5px 5px;
+   padding: 5px 5px;
+ 
+ }
+ .submit-btn{
+     height: 2.5rem;
+     width: 5rem;
+     background-color:#11381c;
+     color: #fff;
+ }
+ .submit-btn:hover{
+    font-stretch: expanded;
+     transform: scale(1.1);
+     background-color:rgb(75, 116, 0);
+     color: rgb(1, 15, 53);
+
+ }
+ 
+ .myimg{
+     width: 39%;
+     height: 50%;
+     margin-top: 14%;
+
+ }
+ .Knowme-btn{
+     transition: all .5s ease;
+     margin-left: 70%;
+     margin-top: -56%;
+     height: 17.5rem;
+    width: 24rem;
+    background-color: #11381c;
+    outline: none;
+    border: none;
+    font-size: 1.7em;
+    font-family: cursive;
+    border-radius: 50px 50px;
+
+    animation-name: knowmebtn;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+    @keyframes knowmebtn {
+        from{
+            
+            
+            margin-left: 720%;
+            margin-top: -56%;
+          
+            transition: all .5s ease;
+            
+        }       
+        to{
+            
+            transition: all .5s ease;
+            margin-left: 70%;
+         
+
+
+        }
+    }
+ 
+ .fa, .fas {
+    font-weight: 900;
+    width: 6vw;
+}
+
