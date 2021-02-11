@@ -22,17 +22,23 @@ app.get('/s',async ( req,res)=>{
     res.render('index')
 })
 
-app.get('/login',async ( req,res)=>{
-    res.render('login')
-})
-app.post('/login',async ( req,res)=>{
-    const name=req.body.n
-    const pass=req.body.p
 
-    const username=await Student.findOne({n:name});
 
-    res.status(200).send('login')
-})
+const bcrypt=require('bcryptjs')
+
+// spass=bcrypt.hash()
+
+
+
+
+
+
+
+
+
+
+
+
 app.post('/s',async ( req,res)=>{
     try {
         const user=new Student({
