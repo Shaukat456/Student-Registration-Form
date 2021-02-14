@@ -15,12 +15,11 @@ app.set('view engine','hbs')
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-app.use(express.static(staticpath))
 
 
-// app.get('/s',async ( req,res)=>{
-//     res.render('index')
-// })
+app.get('/s',async ( req,res)=>{
+    res.render('index')
+})
 
 
 
@@ -47,13 +46,11 @@ app.post('/s',async ( req,res)=>{
         })
         const result= await user.save()
         console.log(user)
-        // res.send('SUBMITTED')
+      
+       
+      
+          res.send('Submitted')
     
-        //This code is not working
-        // req.body.n ==0 ? res.send(' Not submitted'):res.end('Submitted')
-      
-      
-        res.render('index')
       
     } catch (err) {
         setTimeout(() => {
@@ -91,7 +88,7 @@ app.patch('/s/:id',async(req,res)=>{
     }
 })
 
-app.get('/s',async(req,res)=>{
+app.get('/ss',async(req,res)=>{
     try {
         const sdata=await Student.find()
         res.send(sdata)

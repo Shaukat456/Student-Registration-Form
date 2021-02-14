@@ -15,22 +15,27 @@
     display: block;
     margin-top: 20%;
     text-align: center;
-    border-right: 2px solid black;
+    
 }
-.formm input {
+.formm input{
+    border: 2px solid black;
+    border-radius: 20px ;
     font-size: 3em;
     display:block;
     margin:auto;
+    padding: 5%;
     text-align: center;
     
 }
+
 
     </style>
   
 </head>
 
 <body>
-
+{{!-- <Button> LO</Button> --}}
+<a href="" style="color: black; text-decoration:none "> LOGIN</a>
                             <form action="/s" method="POST"  class="formm">
                              
                                     <input type="text" required   placeholder="NAME" name="n">
@@ -44,8 +49,10 @@
                                      
 
 
-
-
+    <form action="/ss" method="GET" >
+    <button> See all Registered Students</button>
+    </form>
+    
 
 
 
