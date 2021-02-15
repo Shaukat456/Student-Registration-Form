@@ -6,11 +6,11 @@ const Student=require('./models/Student')
 const path=require('path')
 const { stat } = require('fs')
 
-// path.join(__d)
 const staticpath=path.join(__dirname,'../public')
-// const loginfolder=path.join(__dirname,'../Login')
-//setting template engine
+
+//Setting up the template engine
 app.set('view engine','hbs')
+
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
@@ -23,11 +23,15 @@ app.get('/s',async ( req,res)=>{
 
 
 
-// const bcrypt=require('bcryptjs')
+const bcrypt=require('bcryptjs')
 
-// // spass=bcrypt.hash()
+const spass=async(password)=>{
+    // console.log(password)
+     const hashpas= await bcrypt.hash(password,1);
+    // console.log(hashpas)
+}
 
-
+spass('shouukatt')
 
 
 
