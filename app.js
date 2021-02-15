@@ -26,12 +26,10 @@ app.get('/s',async ( req,res)=>{
 const bcrypt=require('bcryptjs')
 
 const spass=async(password)=>{
-    // console.log(password)
-     const hashpas= await bcrypt.hash(password,1);
-    // console.log(hashpas)
+     const hashpas= await bcrypt.hash(password,10);
 }
 
-spass('shouukatt')
+spass('Password would be here')
 
 
 

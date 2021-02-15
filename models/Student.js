@@ -10,8 +10,6 @@ const studentInfoType=mongoose.Schema({
 })
 
 studentInfoType.pre("save",async function(next){
-    // const passwordhash=await bcrypt.hash(password,10)
-    // console.log(passwordhash)
     this.password= await bcrypt.hash(this.password,5)
     console.log(this.password)
     next()
