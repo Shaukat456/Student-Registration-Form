@@ -5,7 +5,7 @@ const app=express()
 const Student=require('./models/Student')
 const path=require('path')
 const { stat } = require('fs')
-
+const jwt=require('jsonwebtoken')
 const staticpath=path.join(__dirname,'../public')
 
 //Setting up the template engine
@@ -22,7 +22,6 @@ app.get('/s',async ( req,res)=>{
 })
 
 
-
 const bcrypt=require('bcryptjs')
 
 const spass=async(password)=>{
@@ -30,12 +29,6 @@ const spass=async(password)=>{
 }
 
 spass('Password would be here')
-
-
-
-
-
-
 
 
 
